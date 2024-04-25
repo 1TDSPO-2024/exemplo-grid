@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 50vh;
+
+    grid-template-columns: repeat(3, 150px) ;
+    column-gap: 5px;
+
+    grid-template-rows: repeat(3, 150px);
+    row-gap: 5px;
+
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.box{
+    background-color: #8a2be2;
+    border: 2px solid #00f;
+    color: #fff;
+    text-align: center;
+}
