@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 50vh;
+
+    grid-template-columns: 150PX 150PX 150PX;
+    column-gap: 2px;
+
+    grid-template-rows: 150PX 150PX 150PX;
+    row-gap: 2px;
+
+    justify-items: center;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;
+}
+
+.box{
+    background-color: blueviolet;
+    border: 2px solid blue;
+    color: aliceblue;
+    text-align: center;
+}
