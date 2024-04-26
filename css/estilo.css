@@ -8,17 +8,19 @@
     display: grid;
     border: 2px solid red;
     height: 100vh;
-    grid-template-columns: 150px 150px 150px;
-    column-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap:5px;
 
-    grid-template-rows: 150px 150px 150px;
-    row-gap: 5px;
+    /* column-gap: 5px; 
+    row-gap: 5px; */
 
     /* justify-items: center;
     align-items: center; */
 
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center;
+    align-content: center; */
+   
 
 }
 
@@ -46,7 +48,33 @@
     grid-column: span 4;
 }
 
+/* @media condição + operador (delimitação da resolução / tamanho da tela, geralmente em px, utilizamos as propriedades max-width e min-width geralmente.){
+    ...Escrevemos o nome do seletor que deve ser afetado caso a condição de tela acima seja alcançada: .;
+    Ex:
+    .container{
+        background-color:red;
+    }
+}  */
 
+@media screen and (max-width:360px) and (orientation: landscape){
+
+    .container{
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .container :nth-child(2){
+        grid-column: span 4;
+    }
+    
+    .container :nth-child(3){
+        grid-column: span 4;
+    }
+    
+    .container :nth-child(4){
+        grid-column: span 4;
+    }
+}
 
 /* .container :nth-child(even){
     background-color: red;
