@@ -45,4 +45,34 @@
     border: 2px solid #0000ff;
     color: #fff;
     text-align: center;
+=======
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    height: 50vh;
+    
+    grid-template-columns: 150px 150px 150px;
+    column-gap: 5px; 
+    
+    grid-template-rows: 150px 150px 150px;
+    row-gap: 5px;
+
+    justify-items: center;
+    align-items: center;
+
+    justify-content: center;
+    align-content: center;
+
+}
+
+.box{
+    background-color: #8a2be2;
+    border: 2px solid #0000ff;
+    color: #fff;
+    text-align: center;
 }
